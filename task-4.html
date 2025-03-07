@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/form-reg.css" />
+		<title>Задача 4</title>
+	</head>
+	<body>
+		<h2>Задача 4</h2>
+		<a href="index.html">На главную</a>
+		<p>Калькулятор на форме</p>
+
+		<form id="calculatorForm" class="registration-form">
+			<label for="num1">Первое число:</label>
+			<input type="number" id="num1" placeholder="Первое число" required />
+			
+			<label for="num1">Второе число:</label>
+			<input type="number" id="num2" placeholder="Второе число" required />
+			<select id="operation">
+				<option value="add">Сложение</option>
+				<option value="subtract">Вычитание</option>
+				<option value="multiply">Умножение</option>
+				<option value="divide">Деление</option>
+			</select>
+			<p id="error" class="error"></p>
+			<button type="button" onclick="calculate()">Вычислить</button>
+		</form>
+
+		<h3 id="result" style="color: rgb(92, 25, 91);"></h3>
+
+		<script src="js/task-4.js"></script>
+	</body>
+</html>

@@ -1,0 +1,101 @@
+.registration-form {
+  width: 400px; 
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.error{
+  display: block;
+  color: red;
+  font-size: 0.8em;
+}
+
+.registration-form label {
+  display: block; 
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"],
+.registration-form input[type="number"],
+.registration-form select {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  font-size: 16px;
+}
+
+.registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  resize: vertical; 
+}
+
+.registration-form button[type="submit"] {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.registration-form button[type="button"] {
+  background-color: #6170d0; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.registration-form button[type="submit"]:hover {
+  background-color: #3e8e41; 
+}
+
+.registration-form .error-message {
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.registration-form .required::after {
+  content: " *";
+  color: red;
+}
+
+.registration-form .form-group {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  .registration-form {
+    width: 90%; 
+    margin: 20px auto;
+  }
+}
